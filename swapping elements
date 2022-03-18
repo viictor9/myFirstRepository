@@ -1,0 +1,26 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main{
+
+    public static void main(String[] args){
+        String x, y, temp;
+
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter first swapping element");
+        x = scan.nextLine();
+
+        System.out.println("Enter second swapping element");
+        y = scan.nextLine();
+
+        System.out.println("Before swapping x = " +x+ "\ny = "+y);
+
+        temp = x;
+        x = y;
+        temp = y;
+
+        System.out.println("\nAfter swapping the elements, the value of x = " +x+ "y = " +y);
+
+    }
+}
